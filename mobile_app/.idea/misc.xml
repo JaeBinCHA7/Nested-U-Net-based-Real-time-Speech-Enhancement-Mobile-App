@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/bottomnavi_audio.xml" value="0.36205128205128206" />
+        <entry key="app/src/main/res/drawable-v24/bottomnavi_video.xml" value="0.36205128205128206" />
+        <entry key="app/src/main/res/drawable/bottomnavi_demo.xml" value="0.36205128205128206" />
+        <entry key="app/src/main/res/drawable/bottomnavi_test.xml" value="0.337037037037037" />
+        <entry key="app/src/main/res/drawable/btn_amp_selector.xml" value="0.337037037037037" />
+        <entry key="app/src/main/res/drawable/btn_original_play_selector.xml" value="0.337037037037037" />
+        <entry key="app/src/main/res/drawable/btn_result_play_selector.xml" value="0.337037037037037" />
+        <entry key="app/src/main/res/drawable/btn_se_selector.xml" value="0.337037037037037" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.337037037037037" />
+        <entry key="app/src/main/res/drawable/shape_for_circle_button.xml" value="0.337037037037037" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.19655797101449277" />
+        <entry key="app/src/main/res/layout/fragment_audio.xml" value="0.19655797101449277" />
+        <entry key="app/src/main/res/layout/fragment_demo.xml" value="0.19655797101449277" />
+        <entry key="app/src/main/res/layout/fragment_video.xml" value="0.19655797101449277" />
+        <entry key="app/src/main/res/menu/bottomnavi.xml" value="0.3515625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
