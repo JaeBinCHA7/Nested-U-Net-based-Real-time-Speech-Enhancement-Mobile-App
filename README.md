@@ -34,7 +34,13 @@ This repo is tested with Ubuntu 20.04, Tensorflow 2.9, Python3.7, CUDA11.2. For 
 ![settings](https://user-images.githubusercontent.com/87358781/203690421-4c3dd8c1-432e-4871-8e5d-f6840dc2a9a2.png)
 
 ## Experimental Results
+* **Performance**
+![perf](https://user-images.githubusercontent.com/87358781/203691482-1e15dfb3-56df-4be9-8772-9e8fd841dd02.png)
 
+* **RTF(Real-time Factor)**
+![rtf](https://user-images.githubusercontent.com/87358781/203691615-b13aa002-df0f-40dc-9860-baf859e84cba.png)
+
+RTF is a value obtained by dividing the voice inference time through the model by the voice length. If the value is 1 or less, real-time processing is possible, and the lower the value, the better the real-time system. As a result of the experiment, it was confirmed that real-time processing in the mobile environment (Android) was not possible with the existing nested U-Net, and when the bottleneck block was replaced with LSTM, the RTF was reduced by about 30% compared to the existing model. It can be seen that processing is possible. In addition, compared to the existing model (Nested U-Net), the optimization model shows a slight difference in PESQ value within the range of 0.1 (Nested U-Net: 2.64, optimized structure: 2.60) and has the same STOI value, so it has great performance. It can be seen that the optimization for real-time processing was well done without any drop.
 
 ## Update
 * **2022.11.23** upload codes
