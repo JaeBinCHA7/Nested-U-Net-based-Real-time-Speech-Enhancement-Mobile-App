@@ -21,8 +21,17 @@ In the nested U-Net, since the time axis kernel size of the convolution layer is
 This repo is tested with Ubuntu 20.04, Tensorflow 2.9, Python3.7, CUDA11.2. For package dependencies
 
 ## Experimental Setting
+* **Dataset**
+![dataset](https://user-images.githubusercontent.com/87358781/203690279-706b1b9e-5022-4552-91c1-a3f826e432fa.png)
+
 * **Loss**
 ![loss](https://user-images.githubusercontent.com/87358781/203689803-587d4b4e-3929-40f0-bf41-29c68c5afd8c.png)
+
+* **Hyperparameter**
+![hyperparam](https://user-images.githubusercontent.com/87358781/203690392-b77320dc-1489-4c1a-a618-fc3aadbf661d.png)
+
+* **Settings**
+![settings](https://user-images.githubusercontent.com/87358781/203690421-4c3dd8c1-432e-4871-8e5d-f6840dc2a9a2.png)
 
 ## Update
 * **2022.11.23** upload codes
