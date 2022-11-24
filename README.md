@@ -42,5 +42,10 @@ This repo is tested with Ubuntu 20.04, Tensorflow 2.9, Python3.7, CUDA11.2. For 
 
 RTF is a value obtained by dividing the voice inference time through the model by the voice length. If the value is 1 or less, real-time processing is possible, and the lower the value, the better the real-time system. As a result of the experiment, it was confirmed that real-time processing in the mobile environment (Android) was not possible with the existing nested U-Net, and when the bottleneck block was replaced with LSTM, the RTF was reduced by about 30% compared to the existing model. It can be seen that processing is possible. In addition, compared to the existing model (Nested U-Net), the optimization model shows a slight difference in PESQ value within the range of 0.1 (Nested U-Net: 2.64, optimized structure: 2.60) and has the same STOI value, so it has great performance. It can be seen that the optimization for real-time processing was well done without any drop.
 
+## Reference
+**Monoaural Speech Enhancement Using a Nested U-Net withTwo-Level Skip Connections**   
+S. Hwang, S. W. Park, and Y. Park   
+[[paper]](https://www.isca-speech.org/archive/pdfs/interspeech_2022/hwang22b_interspeech.pdf)  [[code]](https://github.com/seorim0/NUNet-TLS)   
+
 ## Update
 * **2022.11.23** upload codes
