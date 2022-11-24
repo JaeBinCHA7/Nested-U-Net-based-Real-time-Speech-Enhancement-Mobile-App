@@ -11,6 +11,7 @@ This smartphone app allows intuitive observation of real-time speech enhancement
 
 [https://user-images.githubusercontent.com/87358781/203532969-44e8c9e1-9632-43e9-b6c0-e4cd64ea4003.mp4](https://user-images.githubusercontent.com/87358781/203690680-cc53a848-c6db-4a5e-8db7-dd397ccbd784.mp4)
 
+
 ## Nested U-Net in Tensorflow
 ![nunet_lstm_kernel1_process](https://user-images.githubusercontent.com/87358781/203689186-da1804e7-4b8c-47f9-945c-ccc68d109546.png)
 In the nested U-Net, since the time axis kernel size of the convolution layer is 2 in the encoder-decoder stage, the current information and the past information are delivered together to the next layer. In addition, the bottleneck block of the nested U-Net uses a convolutional layer with various dilations to pass the information of the short and far past to the next layer together. However, in real-time processing, delay is inevitable because an additional buffer to store past information is required according to the kernel size and dilation of the convolution layer. Therefore, in order to prevent delay due to the use of an additional buffer, the time axis kernel size of the convolution layer used in the encoder-decoder stage was changed from 2 to 1, and the bottleneck block was replaced with LSTM to experiment.
