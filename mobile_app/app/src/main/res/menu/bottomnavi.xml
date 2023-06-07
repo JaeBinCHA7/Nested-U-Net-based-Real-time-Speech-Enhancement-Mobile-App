@@ -2,6 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+<<<<<<< HEAD
+        android:id="@+id/proposed_model"
+        android:enabled="true"
+        android:icon="@drawable/bottomnavi_audio"
+        android:title="Proposed"/>
+
+    <item
+        android:id="@+id/baseline"
+        android:enabled="true"
+        android:icon="@drawable/bottomnavi_audio"
+        android:title="baseline"/>
+=======
         android:id="@+id/bottom_audio"
         android:enabled="true"
         android:icon="@drawable/bottomnavi_audio"
@@ -13,4 +25,5 @@
         android:icon="@drawable/bottomnavi_video"
         android:title="Video"/>
 
+>>>>>>> d472e208e6d0ea3e1d684a14feccbb599744d9ec
 </menu>

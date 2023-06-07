@@ -35,5 +35,19 @@
             android:background="@color/white"
             app:itemTextColor="@color/custom"
             app:menu="@menu/bottomnavi" />
+<<<<<<< HEAD
+
+<!--        <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--            android:id="@+id/bottomnavi2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            app:labelVisibilityMode="labeled"-->
+<!--            app:itemIconTint="@color/custom"-->
+<!--            android:background="@color/white"-->
+<!--            app:itemTextColor="@color/custom"-->
+<!--            app:menu="@menu/bottomnavi2" />-->
+=======
+>>>>>>> d472e208e6d0ea3e1d684a14feccbb599744d9ec
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

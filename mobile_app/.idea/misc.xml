@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+=======
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DesignSurface">
@@ -22,6 +27,7 @@
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+>>>>>>> d472e208e6d0ea3e1d684a14feccbb599744d9ec
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

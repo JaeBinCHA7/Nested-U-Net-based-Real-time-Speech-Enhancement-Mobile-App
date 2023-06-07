@@ -6,7 +6,11 @@ android {
     compileSdk 32
 
     defaultConfig {
+<<<<<<< HEAD
+        applicationId "com.example.real_time_speech_enhancer"
+=======
         applicationId "com.example.speech_enhancement_rt_on_mobile"
+>>>>>>> d472e208e6d0ea3e1d684a14feccbb599744d9ec
         minSdk 23
         targetSdk 32
         versionCode 1
@@ -28,6 +32,14 @@ android {
 }
 
 dependencies {
+<<<<<<< HEAD
+//    implementation 'com.github.JaeBinCHA7:RTNR:V2.0.0'
+    implementation 'org.tensorflow:tensorflow-lite-support:0.3.0' // TFLite FileUtil
+    implementation files('libs/commons-math3-3.6.1.jar') // Complex, FFT
+    implementation files('libs/sound-1.1.1.jar') // STFT
+    implementation "org.tensorflow:tensorflow-lite-select-tf-ops:+" // TFLite LSTM
+    implementation 'org.tensorflow:tensorflow-lite:+' // TFLite
+=======
 
     implementation 'io.github.gautamchibde:audiovisualizer:2.2.5'     // Audio Visualizer : https://github.com/GautamChibde/android-audio-visualizer
     implementation 'org.tensorflow:tensorflow-lite:+' // TFLite
@@ -38,6 +50,7 @@ dependencies {
     implementation 'com.github.blackfizz:eazegraph:1.2.2@aar' // 청각 테스트 게이지
     implementation "org.tensorflow:tensorflow-lite-select-tf-ops:+" // TFLite LSTM
 
+>>>>>>> d472e208e6d0ea3e1d684a14feccbb599744d9ec
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'

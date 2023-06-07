@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
+    package="com.example.real_time_speech_enhancer_app">
+=======
     package="com.example.speech_enhancement_rt_on_mobile">
+>>>>>>> d472e208e6d0ea3e1d684a14feccbb599744d9ec
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
@@ -14,7 +18,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Speech_enhancement_rt_on_mobile">
         <activity
+<<<<<<< HEAD
+            android:name="com.example.real_time_speech_enhancer_app.MainActivity"
+=======
             android:name=".MainActivity"
+>>>>>>> d472e208e6d0ea3e1d684a14feccbb599744d9ec
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

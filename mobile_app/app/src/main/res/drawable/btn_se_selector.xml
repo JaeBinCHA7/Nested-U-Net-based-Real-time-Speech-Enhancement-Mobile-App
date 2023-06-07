@@ -2,6 +2,17 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- selected -->
     <item android:state_selected="true"
+<<<<<<< HEAD
+        android:drawable="@drawable/speech_enhancement_on" />
+    <!-- pressed -->
+    <item android:state_pressed="true"
+        android:drawable="@drawable/speech_enhancement_on" />
+    <!-- focused -->
+    <item android:state_focused="true"
+        android:drawable="@drawable/speech_enhancement_on" />
+    <!-- default -->
+    <item android:drawable="@drawable/speech_enhancement_off" />
+=======
         android:drawable="@drawable/btn_se_clicked" />
     <!-- pressed -->
     <item android:state_pressed="true"
@@ -11,4 +22,5 @@
         android:drawable="@drawable/btn_se_clicked" />
     <!-- default -->
     <item android:drawable="@drawable/btn_se_unclicked" />
+>>>>>>> d472e208e6d0ea3e1d684a14feccbb599744d9ec
 </selector>
