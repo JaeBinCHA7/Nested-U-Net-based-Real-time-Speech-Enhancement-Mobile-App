@@ -47,7 +47,7 @@ dataset_train = dataset_train.batch(opt.batch_size, drop_remainder=True).repeat(
 steps_train = generator_train.num_data // opt.batch_size
 
 # Validation generator
-generator_val = dataloader.audio_generator(opt, train_flag=True)
+generator_val = dataloader.audio_generator(opt, train_flag=False)
 dataset_val = generator_val.tf_data_set
 dataset_val = dataset_val.batch(opt.batch_size, drop_remainder=True).repeat()
 steps_val = generator_val.num_data // opt.batch_size
