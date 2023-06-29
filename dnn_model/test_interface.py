@@ -12,11 +12,13 @@ import dataloader
 import datetime
 import tensorflow as tf
 import numpy as np
+from pesq import pesq as get_pesq
+from pystoi import stoi as get_stoi
 
 ######################################################################################################################
 # Parser init
 ######################################################################################################################
-opt = options.Options().init(argparse.ArgumentParser(description='speech enhancement')).parse_args()
+opt = options.Options().init(argparse.ArgumentParser(description='Real-time speech enhancement')).parse_args()
 print(opt)
 
 ######################################################################################################################
@@ -30,7 +32,6 @@ steps_test = generator_test.num_data // opt.test_batch
 ######################################################################################################################
 # Models
 ######################################################################################################################
-
 # set seeds
 np.random.seed(42)
 tf.random.set_seed(42)
@@ -50,7 +51,16 @@ model.load_weights(opt.pretrain_model_path)
 mt = dataloader.mapping_testset(opt)
 clean_list, noisy_list = mt.mapping_data()
 snr_index = mt.get_snr_index()
-pesq_list, stoi_list = dataloader.cal_metrics_for_testset(clean_list, noisy_list, model)
+
+pesq_list = []
+stoi_list = []
+for i, noisy_wav in enumerate(noisy_list):
+    pred_wav = model(noisy_wav, training=False)
+    pred_wav = np.array(pred_wav)
+    pesq_score = get_pesq(opt.fs, clean_list[i], pred_wav, "wb")
+    stoi_score = get_stoi(clean_list[i], pred_wav, opt.fs, extended=False)
+    pesq_list.append(pesq_score)
+    stoi_list.append(stoi_score)
 
 avg_pesq_0, avg_pesq_5, avg_pesq_10, avg_pesq_15 = 0, 0, 0, 0
 avg_stoi_0, avg_stoi_5, avg_stoi_10, avg_stoi_15 = 0, 0, 0, 0
