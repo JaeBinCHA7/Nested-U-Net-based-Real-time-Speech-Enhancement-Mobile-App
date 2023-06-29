@@ -20,14 +20,6 @@ opt = options.Options().init(argparse.ArgumentParser(description='speech enhance
 print(opt)
 
 ######################################################################################################################
-# Set a model (check point) and a log folder
-######################################################################################################################
-dir_name = os.path.dirname(os.path.abspath(__file__))  # absolute path
-print(dir_name)
-
-save_name = opt.arch + '_' + opt.env
-
-######################################################################################################################
 # Dataset
 ######################################################################################################################
 generator_test = dataloader.testset_geneator(opt)
